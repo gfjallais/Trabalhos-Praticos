@@ -1,0 +1,4 @@
+abacaxi 1
+banana 1
+coco 1
+#FIM
