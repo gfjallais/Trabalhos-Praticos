@@ -1,0 +1,2 @@
+main.o: main.cpp rock.hpp
+rock.o: rock.cpp rock.hpp
