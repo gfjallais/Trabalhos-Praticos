@@ -48,7 +48,7 @@ float max_subsum_w_mid(float* shows, int *left, int *mid, int *right, float *aux
 
   for (int i = *mid; i >= *left; i--) {
     soma = soma + shows[i];
-    if (soma > left_sum){
+    if (soma >= left_sum){
       l = i;
       left_sum = soma;
     }
@@ -58,7 +58,7 @@ float max_subsum_w_mid(float* shows, int *left, int *mid, int *right, float *aux
   soma = 0;
   for (int i = *mid; i <= *right; i++) {
     soma = soma + shows[i];
-    if (soma > right_sum){
+    if (soma >= right_sum){
       right_sum = soma;
       r = i;
     } 
