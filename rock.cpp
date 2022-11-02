@@ -8,7 +8,8 @@ void max_subarray_sum_dq(float *shows, int size){
   int l = 0; int r = size;
   float aux[3] = {-1000000, -1000000, -1000000};
   max_subsum(shows, &l, &r, aux);
-  cout << aux[1] + 1 << " " << aux[2] + 1 << endl;
+  int upper = (aux[2] == size) ? int(aux[2]):int(aux[2] + 1);
+  cout << aux[0] << " " << aux[1] + 1 << " " << upper << endl;
 }
 
 //Função para encontrar o subarray com a maior soma e o máximo de shows

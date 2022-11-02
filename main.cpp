@@ -25,6 +25,11 @@ int main() {
       }
     }
 
+    // for(unsigned int j = 0; j < qtd_shows; j++){
+    //     cout << shows[j] << " ";
+    //   }
+    //   cout << endl;
+
     max_subarray_sum_dq(shows, qtd_shows);
 
   }
